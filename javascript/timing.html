@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<SCRIPT Language="javaScript">
+function bus()
+{
+    var n,answer;
+    n=document.frmbus.cbotime.selectedIndex;
+    switch(n)
+    {
+        case 0:
+            answer="1:15";
+            break;
+        case 1:
+            answer="2:40";
+            break;
+        case 2:answer="3:4";
+            break;
+    }
+    document.frmbus.txtbustime.value=answer;
+}
+</script>
+<FORM name="frmbus">
+<P>time
+<SELECT name="cbotime" size="1">
+    <option value="1-2" selected>1-2
+    <option value="2-3">2-3
+    <option value="3-4">3-4
+
+    
+</SELECT><br><br>
+bustime
+<INPUT Type="text" Name="txtbustime">
+<br><br>
+<button onclick = "fact()"> next</button>
+<INPUT Type="button" Value="Show" onclick="bus()">
+
+</body>
+</html>

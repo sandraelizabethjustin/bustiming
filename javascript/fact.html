@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style = "text-align: center; font-size: 20px;">
+<h1> Welcome to the javaScript world!! </h1>
+
+<SCRIPT Language="javaScript">
+function bus()
+{
+    var n,answer;
+    n=document.frmbus.cbotime.selectedIndex;
+    switch(n)
+    {
+        case 0:
+            answer="1:15";
+            break;
+        case 1:
+            answer="2:40";
+            break;
+        case 2:answer="3:4";
+            break;
+    }
+    document.frmbus.txtbustime.value=answer;
+}
+</script>
+<p>from
+    <SELECT name="from" size="1">
+        <option value="kottayam" selected>kottayam
+            <option value="ernakulam">ernakulam
+                <option value="palakkad">palakkad
+                    <option value="kannur">kannur
+                        <option value="calicut">calicut
+                
+    </SELECT>
+    <p>to
+        <SELECT name="to" size="1">>
+            <option value="kottayam" selected>kottayam
+                <option value="ernakulam">ernakulam
+                    <option value="palakkad">palakkad
+                        <option value="kannur">kannur
+                            <option value="calicut">calicut
+                            </SELECT>
+             
+<br><br>
+
+
+<FORM name="frmbus">
+<P>time
+<SELECT name="cbotime" size="1">
+    <option value="1-2" selected>1-2
+    <option value="2-3">2-3
+    <option value="3-4">3-4
+
+    
+</SELECT><br><br>
+bustime
+<INPUT Type="text" Name="txtbustime">
+<br><br>
+<button onclick = "fact()"> next</button>
+<INPUT Type="button" Value="Show" onclick="bus()">
+
+</body>
+</html>
